@@ -11,7 +11,7 @@ const App = () => {
               key={index}
               className={`img ${
                 index == 2 || index == 5
-                  ? "!md:w-screen !md:rounded-[20vh] !w-[150vw] !rounded-[10vh]"
+                  ? "!w-screen !rounded-[20vh]"
                   : ""
               }`}
               style={{
