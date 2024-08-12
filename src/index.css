@@ -54,3 +54,35 @@
   width: 100vh;
   border-radius: 20vh;
 }
+
+.t {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate3d(-50%, -50%, 0);
+}
+.t-line {
+  display: flex;
+  transform: translateX(25%);
+  animation: runner 10s linear infinite;
+}
+
+@keyframes run {
+  to {
+    transform: translateX(35%);
+  }
+}
+.img {
+  --tile-margin: 3vw;
+  flex: none;
+  width: 30vh;
+  height: 30vh;
+  margin: var(--tile-margin);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}

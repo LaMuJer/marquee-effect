@@ -2,8 +2,8 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="container mx-auto w-screen h-screen overflow-hidden relative z-50">
-      <div className="tiles">
+    <div className="w-screen h-screen overflow-hidden flex justify-center items-center relative z-50">
+      <div className="tiles !hidden">
         {Array.from({ length: 3 }).map((_, index) => (
           <div className="tiles__line" key={index}>
             <div
@@ -44,6 +44,24 @@ const App = () => {
             ></div>
           </div>
         ))}
+      </div>
+
+      {/* my testing */}
+      <div className="w-screen h-screen border overflow-hidden relative z-50 shadow-md rounded-lg">
+        <div className="t">
+          <div className="t-line">
+            {Array.from({ length: 6 }).map((_, index) => (
+              <div
+                className={`img ${
+                  index == 2 || index == 5 ? "!w-screen !rounded-[20vh]" : ""
+                }`}
+                style={{
+                  backgroundImage: "url(p1.jpg)",
+                }}
+              ></div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
