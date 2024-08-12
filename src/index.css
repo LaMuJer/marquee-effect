@@ -40,3 +40,11 @@
   background-position: 50% 50%;
   border-radius: 50%;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+  .img {
+    --tile-margin: 10vw;
+    margin: var(--tile-margin);
+  }
+}

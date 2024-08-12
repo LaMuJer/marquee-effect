@@ -8,8 +8,11 @@ const App = () => {
         <div className="t-line">
           {Array.from({ length: 6 }).map((_, index) => (
             <div
+              key={index}
               className={`img ${
-                index == 2 || index == 5 ? "!w-screen !rounded-[20vh]" : ""
+                index == 2 || index == 5
+                  ? "!md:w-screen !md:rounded-[20vh] !w-[150vw] !rounded-[10vh]"
+                  : ""
               }`}
               style={{
                 backgroundImage: "url(p1.jpg)",
